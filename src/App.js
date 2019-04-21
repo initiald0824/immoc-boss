@@ -1,27 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { connect } from 'react-redux';
+import { addWeapon, removeWeapon, addWeaponAsync } from "./index.redux";
 
-class App extends Component {
+const mapStateToProps = (state) => {
+  return {num: state}
+};
+const mapActionToProps = {addWeapon, removeWeapon, addWeaponAsync};
+
+
+@connect(mapStateToProps, mapActionToProps)
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <h1>现在有机枪{this.props.num}把</h1>
+        <button onClick={this.props.addWeapon}>申请武器</button>
+        <button onClick={this.props.removeWeapon}>回收武器</button>
+        <button onClick={this.props.addWeaponAsync}>拖两天再给</button>
       </div>
-    );
+    )
   }
 }
 
