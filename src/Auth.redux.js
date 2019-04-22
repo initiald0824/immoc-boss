@@ -1,7 +1,14 @@
 const LOGIN = 'LOGIN';
 const LOGOUT = 'LOGOUT';
+const USERDATA = 'USERDATA';
 
-export function auth(state={isAuth: false, user: 'system'}, action) {
+const initState = {
+  isAuth: false,
+  user: '李云龙',
+  age: 20
+};
+
+export function auth(state=initState, action) {
   switch(action.type) {
     case LOGIN:
       return {...state, isAuth: true};
@@ -18,4 +25,8 @@ export function login() {
 
 export function logout() {
   return {type: LOGOUT}
+}
+
+export function getUserData() {
+  return {type: USERDATA}
 }

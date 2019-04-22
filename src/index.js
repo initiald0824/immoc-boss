@@ -7,7 +7,7 @@ import { rootSaga } from "./index.redux";
 import Auth from './Auth.js';
 import Dashboard from './Dashboard.js';
 import reducers from './reducer.js';
-import { BrowserRouter, Route, Link, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
 
 const sagaMiddleware = createSagaMiddleware();
@@ -18,8 +18,6 @@ const store = createStore(reducers, compose(
 ));
 
 sagaMiddleware.run(rootSaga);
-
-console.log('store.getState()', store.getState());
 
 ReactDom.render(
   <Provider store={store}>
