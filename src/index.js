@@ -3,32 +3,32 @@ import ReactDom from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { Provider } from 'react-redux';
-import { rootSaga } from "./index.redux";
-import Auth from './Auth.js';
-import Dashboard from './Dashboard.js';
-import reducers from './reducer.js';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
-
+import reducers from './reducer';
+import { rootSaga } from './rootSaga';
+import './config';
+import Login from './container/login/login';
+import Register from './container/register/register';
 
 const sagaMiddleware = createSagaMiddleware();
-const reduxDevtools = window.devToolsExtension ? window.devToolsExtension() : ()=>{};
-const store = createStore(reducers, compose(
-  applyMiddleware(sagaMiddleware),
-  reduxDevtools
-));
+const store = createStore(
+  reducers,
+  compose(
+    applyMiddleware(sagaMiddleware),
+    window.devToolsExtension ? window.devToolsExtension() : f=>f
+  )
+);
 
 sagaMiddleware.run(rootSaga);
 
 ReactDom.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Switch>
-        <Route path='/login' component={Auth} />
-        <Route path='/dashboard' component={Dashboard} />
-        <Redirect to='/dashboard' />
-      </Switch>
+      <div>
+        <Route path='/login' component={Login} />
+        <Route path='/register' component={Register} />
+      </div>
     </BrowserRouter>
-  </Provider>
-  , document.getElementById('root'));
-
-
+  </Provider>,
+  document.getElementById("root")
+);
