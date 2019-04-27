@@ -1,5 +1,6 @@
 import { all } from 'redux-saga/effects';
+import { rootSaga as userSaga } from './redux/user.redux';
 
-export const rootSaga = function* () {
-  yield all([])
-};
+export function* rootSaga() {
+  yield all([...userSaga])
+}
