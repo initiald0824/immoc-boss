@@ -8,7 +8,7 @@ Router.get('/info', function(req, res) {
 });
 
 Router.post('/register', function(req, res) {
-  const { user, pwd, type } = req.body.data;
+  const { user, pwd, type } = req.body;
   User.findOne({user: user}, function(err, doc) {
     if (doc) {
       return res.json({code: 1, msg: '用户名重复'});

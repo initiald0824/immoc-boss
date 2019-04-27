@@ -6,6 +6,7 @@ const ERROR_MSG = 'ERROR_MSG';
 const REGISTER = 'REGISTER';
 
 const initState = {
+  redirectTo: '',
   isAuth: false,
   msg: '',
   user: '',
@@ -24,7 +25,7 @@ function registerSuccess(data) {
 export function user (state=initState, action) {
   switch(action.type) {
     case REGISTER_SUCCESS:
-      return {...state,  msg: '', isAuth: true, ...action.payload};
+      return {...state,  msg: '', isAuth: true, redirectTo: '', ...action.payload};
     case ERROR_MSG:
       return {...state, isAuth: false, msg: action.msg};
     default:

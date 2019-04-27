@@ -2,27 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/component/logo/logo.css" line="6" />
-    <bookmark url="file://$PROJECT_DIR$/src/redux/user.redux.js" line="23" />
+    <bookmark url="file://$PROJECT_DIR$/src/redux/user.redux.js" line="24" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69ae1932-3a90-48db-862a-9911b9fd3561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/authRoute/authRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/user.redux.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/logo/logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/logo/logo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/register/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rootSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/user.redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/user.redux.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/redux/user.redux.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="405">
+              <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="142">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -203,13 +188,13 @@
         <option value="$PROJECT_DIR$/src/reducer.js" />
         <option value="$PROJECT_DIR$/src/component/authRoute/authRoute.js" />
         <option value="$PROJECT_DIR$/src/rootSaga.js" />
-        <option value="$PROJECT_DIR$/src/redux/user.redux.js" />
         <option value="$PROJECT_DIR$/src/container/register/register.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/server/model.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/user.js" />
+        <option value="$PROJECT_DIR$/src/redux/user.redux.js" />
       </list>
     </option>
   </component>
@@ -336,7 +321,7 @@
       <workItem from="1556174858239" duration="728000" />
       <workItem from="1556183820583" duration="9131000" />
       <workItem from="1556248141318" duration="599000" />
-      <workItem from="1556334670496" duration="5805000" />
+      <workItem from="1556334670496" duration="6834000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <created>1555855727394</created>
@@ -359,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556029267875</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="*">
+      <created>1556344036587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556344036587</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -368,7 +360,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88428000" />
+    <option name="totallyTimeSpent" value="89457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,7 +375,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49942726" visible="true" weight="0.2194206" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49942726" visible="true" weight="0.2194206" />
       <window_info id="Structure" order="1" sideWeight="0.50057274" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50057274" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="3" weight="0.3299356" />
@@ -542,16 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/user.redux.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/register/register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -595,8 +577,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="142">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/user.redux.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
