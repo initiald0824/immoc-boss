@@ -9,6 +9,7 @@ import { rootSaga } from './rootSaga';
 import './config';
 import Login from './container/login/login';
 import Register from './container/register/register';
+import BossInfo from './container/bossInfo/bossInfo';
 import AuthRoute from '@component/authRoute/authRoute';
 import './index.css';
 
@@ -23,16 +24,13 @@ const store = createStore(
 
 sagaMiddleware.run(rootSaga);
 
-function Boss() {
-  return <h2>Boss</h2>;
-}
 
 ReactDom.render(
   <Provider store={store}>
     <BrowserRouter>
       <div>
         <AuthRoute />
-        <Route path='/boss' component={Boss} />
+        <Route path='/bossInfo' component={BossInfo} />
         <Route path='/login' component={Login} />
         <Route path='/register' component={Register} />
       </div>
