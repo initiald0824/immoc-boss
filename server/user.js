@@ -56,6 +56,19 @@ Router.post('/login', function(req, res) {
   });
 });
 
+Router.post('/update', function(req, res) {
+  const { userId } = req.cookies;
+  if (!userId) {
+    return res.json({code: 1})
+  }
+  const body = req.body;
+  User.findByIdAndUpdate(userId, body.payload, function(err, doc) {
+    const data = Object.assign({},
+      {user: doc.user, type: doc.type}, body.payload);
+    return res.json({code: 0, data});
+  });
+});
+
 function md5Pwd(pwd) {
   const salt = 'imooc boss';
   return utils.md5(utils.md5(pwd+salt));
